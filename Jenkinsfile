@@ -8,9 +8,20 @@ pipeline {
     }
 
     stage('check file') {
-      steps {
-        sh '''ls -lrt
+      parallel {
+        stage('check file') {
+          steps {
+            sh '''ls -lrt
 '''
+          }
+        }
+
+        stage('run python file') {
+          steps {
+            sh 'dragon.py'
+          }
+        }
+
       }
     }
 
