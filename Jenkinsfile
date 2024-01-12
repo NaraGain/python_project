@@ -21,6 +21,12 @@ python dragon.py
           }
         }
 
+        stage('checkdevbranch') {
+          steps {
+            git(url: 'https://github.com/NaraGain/python_project.git', branch: 'dev')
+          }
+        }
+
       }
     }
 
