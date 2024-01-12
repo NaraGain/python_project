@@ -18,7 +18,7 @@ pipeline {
 
         stage('run python file') {
           steps {
-            sh 'ls -a && sh "python dragon.py"'
+            sh 'ls -a && sh "python ./dragon.py"'
           }
         }
 
