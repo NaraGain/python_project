@@ -1,5 +1,4 @@
 pipeline {
-  agent {docker {images 'python:3.5.1'} }
   stages {
     stage('checkout') {
       steps {
