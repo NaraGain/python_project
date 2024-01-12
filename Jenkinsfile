@@ -18,9 +18,8 @@ pipeline {
 
         stage('run python file') {
           steps {
-            sh '''#!/usr/bin/python
-
-python /home/user/dragon.py'''
+            sh '''sh "python3 --version"
+sh "python --version"'''
           }
         }
 
