@@ -24,5 +24,11 @@ python dragon.py
       }
     }
 
+    stage('checkoutversion') {
+      steps {
+        sh 'git --version'
+      }
+    }
+
   }
 }
