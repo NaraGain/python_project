@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('check file') {
+      steps {
+        sh '''ls -lrt
+'''
+      }
+    }
+
   }
 }
