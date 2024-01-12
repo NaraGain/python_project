@@ -18,8 +18,7 @@ pipeline {
 
         stage('run python file') {
           steps {
-            sh '''sh "python3 --version"
-sh "python --version"'''
+            sh 'ls -a && sh "python dragon.py"'
           }
         }
 
